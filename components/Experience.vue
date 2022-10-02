@@ -8,8 +8,8 @@
     </p>
     <br />
 
-    <div class="services-column mt-5 gap-4 row align-items-center">
-      <div class="column col-md-3 col-lg-3 mb-5 col-sm-10">
+    <div class="services-column mt-5 gap-4 px-3 row align-items-center">
+      <div class="column col-md-3 col-lg-3 mb-5 col-sm-10" data-aos="fade-up" data-aos-delay="300">
         <div class="column-icon-bar"><i class="bi bi-cash"></i></div>
         <h5 class="fw-bold tag">Afforrdable</h5>
         <p class="text-muted description">
@@ -17,7 +17,7 @@
         </p>
       </div>
 
-      <div class="column col-md-3 col-lg-3 col-sm-10 mb-5">
+      <div class="column col-md-3 col-lg-3 col-sm-10 mb-5" data-aos="fade-up" data-aos-delay="400">
         <div class="column-icon-bar"><i class="bi bi-cash"></i></div>
         <h5 class="fw-bold tag">Afforrdable</h5>
         <p class="text-muted description">
@@ -25,7 +25,7 @@
         </p>
       </div>
 
-      <div class="column col-md-3 col-lg-3 col-sm-10 mb-5">
+      <div class="column col-md-3 col-lg-3 col-sm-10 mb-5" data-aos="fade-up" data-aos-delay="500">
         <div class="column-icon-bar"><i class="bi bi-cash"></i></div>
         <h5 class="fw-bold tag">Afforrdable</h5>
         <p class="text-muted description">

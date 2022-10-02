@@ -1,20 +1,16 @@
 <template>
   <Section>
-    <h5 class="text-muted">Brands covered by us:</h5>
+    <h5 class="text-muted">{{ title }}</h5>
     <br />
     <div class="brand-inline">
-      <img src="../static/img/brands/image 2.png" alt="brand" class="brands" />
-      <img src="../static/img/brands/image 7.png" alt="brand" class="brands" />
-      <img src="../static/img/brands/image 8.png" alt="brand" class="brands" />
+      <div v-if="!Array.isArray(brands)">Empty</div>
       <img
-        src="../static/img/brands/LeadwayLogo 1.png"
+        v-for="(brand, index) in brands"
+        :key="index"
+        :src="require('../static/img/' + brand)"
         alt="brand"
         class="brands"
-      />
-      <img
-        src="../static/img/brands/STinsurLogo 1.png"
-        alt="brand"
-        class="brands"
+        v-else
       />
     </div>
     <br />
@@ -25,7 +21,20 @@
 export default {
   name: "Brands",
   props: {
-    brands: Array,
+    brands: {
+      type: Array,
+      default: () => [
+        "brands/image 2.png",
+        "brands/image 7.png",
+        "brands/image 8.png",
+        "brands/LeadwayLogo 1.png",
+        "brands/STinsurLogo 1.png",
+      ],
+    },
+    title: {
+      type: String,
+      default: "Brands covered by us:",
+    },
   },
   setup() {
     return {};
