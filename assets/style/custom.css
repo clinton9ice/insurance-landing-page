@@ -1,0 +1,38 @@
+@font-face {
+  font-family: Noto Sans;
+  src: url("../fonts/NotoSans-Regular.ttf");
+}
+:root {
+  --success: #439687;
+  --dark: #475467;
+  --navy: #094063;
+}
+body {
+  font-family: "Noto Sans", sans-serif !important;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.container {
+  max-width: 1250px !important;
+}
+button,
+input {
+  box-shadow: none !important;
+  outline: none !important;
+  border: unset !important;
+}
+.btn {
+  padding: 0.5rem 1.8rem !important;
+}
+
+.btn-success,
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.text-dark {
+  color: var(--dark) !important;
+}
+.text-navy {
+  color: var(--navy);
+}
