@@ -27,47 +27,21 @@
         </div>
 
         <div class="tabs-cards row justify-content-center gap-4">
-          <div class="card col-sm-8 col-md-5 col-lg-3 py-4">
+          <div class="card col-sm-8 col-md-5 col-lg-3 py-4" v-for="(plan, index) in plans" :key="index">
             <div class="c-header d-flex align-items-end mb-3">
-              <i class="bi bi-basket-fill text-success fw-bold me-3"></i>
-              <h5 class="fw-bold mb-0">Comprehensive</h5>
+              <i class="text-success fw-bold me-3" :class="plan.icon" v-if="plan.icon"></i>
+              <i class="bi bi-basket-fill text-success fw-bold me-3" v-else></i>
+              <h6 class="fw- mb-0">{{plan.name}}</h6>
             </div>
             <p class="des text-muted small">
-              Covers all the vehicles use to drive growth in your business
+              {{plan.description}}
             </p>
-            <a href="#" class="link text-navy fw-bold">
+            <a :href="plan.link" class="link text-navy fw-bold">
               Learn More
               <i class="bi bi-arrow-right ms-2"></i>
             </a>
           </div>
 
-          <div class="card col-sm-8 col-md-5 col-lg-3 py-4">
-            <div class="c-header d-flex align-items-end mb-3">
-              <i class="bi bi-basket-fill text-success fw-bold me-3"></i>
-              <h5 class="fw-bold mb-0">Comprehensive</h5>
-            </div>
-            <p class="des text-muted small">
-              Covers all the vehicles use to drive growth in your business
-            </p>
-            <a href="#" class="link text-navy fw-bold">
-              Learn More
-              <i class="bi bi-arrow-right ms-2"></i>
-            </a>
-          </div>
-
-          <div class="card col-sm-8 col-md-5 col-lg-3 py-4">
-            <div class="c-header d-flex align-items-end mb-3">
-              <i class="bi bi-basket-fill text-success fw-bold me-3"></i>
-              <h5 class="fw-bold mb-0">Comprehensive</h5>
-            </div>
-            <p class="des text-muted small">
-              Covers all the vehicles use to drive growth in your business
-            </p>
-            <a href="#" class="link text-navy fw-bold">
-              Learn More
-              <i class="bi bi-arrow-right ms-2"></i>
-            </a>
-          </div>
         </div>
       </div>
     </div>
@@ -77,6 +51,45 @@
 <script>
 export default {
   name: "bespokeplans",
+  props: {
+    plans: {
+      type: Array,
+      default: () => [
+        {
+          icon: "",
+          svg: "",
+          name: "Comprehensive",
+          description: "Covers all the vehicle used to drive growth in your business",
+          link: "",
+          colour: ""
+        },
+        {
+          icon: "",
+          svg: "",
+          name: "Monthly Comp. Auto",
+          description: "Minimise vehicle risks with an affordable auto insurance.",
+          link: "",
+          colour: ""
+        },
+        {
+          icon: "",
+          svg: "",
+          name: "Mini Comp. Auto",
+          description: "Get your vehicles on the road without worry on your budget.",
+          link: "",
+          colour: ""
+        },
+        {
+          icon: "",
+          svg: "",
+          name: "3rd Party Auto",
+          description: "Drive with confidence while you save on insurance costs.",
+          link: "",
+          colour: ""
+        },
+      ]
+    }
+  },
   setup() {
     return {};
   },

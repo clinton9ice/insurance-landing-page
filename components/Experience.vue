@@ -9,27 +9,48 @@
     <br />
 
     <div class="services-column mt-5 gap-4 px-3 row align-items-center">
-      <div class="column col-md-3 col-lg-3 mb-5 col-sm-10" data-aos="fade-up" data-aos-delay="300">
-        <div class="column-icon-bar"><i class="bi bi-cash"></i></div>
-        <h5 class="fw-bold tag">Afforrdable</h5>
-        <p class="text-muted description">
+      <div
+        class="column col-md-3 col-lg-3 mb-5 col-sm-10"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div class="column-icon-bar mb-4">
+          <img src="../static/img/icons/afford.png" alt="money">
+        </div>
+
+        <h6 class="fw-semibold tag mb-3 text-navy">Affordable</h6>
+        <p class=" description small">
           Get affordable insurance coverage that fits your budget.
         </p>
       </div>
 
-      <div class="column col-md-3 col-lg-3 col-sm-10 mb-5" data-aos="fade-up" data-aos-delay="400">
-        <div class="column-icon-bar"><i class="bi bi-cash"></i></div>
-        <h5 class="fw-bold tag">Afforrdable</h5>
-        <p class="text-muted description">
-          Get affordable insurance coverage that fits your budget.
+      <div
+        class="column col-md-3 col-lg-3 col-sm-10 mb-5"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <div class="column-icon-bar mb-4">
+          <img src="../static/img/icons/paper.png" alt="paper work">
+        </div>
+        <h6 class="fw-semibold text-navy tag mb-3">No paperwork</h6>
+        <p class="description small">
+          We are online! Get your business covered without leaving your home or
+          filling out long forms.
         </p>
       </div>
 
-      <div class="column col-md-3 col-lg-3 col-sm-10 mb-5" data-aos="fade-up" data-aos-delay="500">
-        <div class="column-icon-bar"><i class="bi bi-cash"></i></div>
-        <h5 class="fw-bold tag">Afforrdable</h5>
-        <p class="text-muted description">
-          Get affordable insurance coverage that fits your budget.
+      <div
+        class="column col-md-3 col-lg-3 col-sm-10 mb-5"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <div class="column-icon-bar mb-4">
+          <img src="../static/img/icons/value.png" alt="value">
+        </div>
+        <h6 class="fw-semibold tag mb-3 text-navy">Added Business Value</h6>
+        <p class="description small">
+          Focus on your KPIs while we worry about your business risks and your
+          staff.
         </p>
       </div>
     </div>

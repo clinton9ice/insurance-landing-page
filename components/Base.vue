@@ -9,7 +9,7 @@
     <BespokePlans />
     <Assessment />
     <Convinience />
-    <Brands title="Co-creating solutions with:" class="mt-5 pt-4" />
+<!--    <Brands title="Co-creating solutions with:" class="mt-5 pt-4" />-->
     <GetInTouch />
     <Footer />
   </main>

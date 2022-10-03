@@ -12,7 +12,7 @@
   --success-20: #19875405;
 }
 body {
-  font-family: "Noto Sans", sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
   overflow: hidden;
   overflow-y: auto;
 }
