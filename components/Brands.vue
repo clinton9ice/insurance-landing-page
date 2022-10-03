@@ -65,7 +65,7 @@ export default {
   overflow: hidden;
   width: 100%;
   position: relative;
-  animation: 15s cubic-bezier(0.54, 0.61, 0, 1.19) slide-10978632 infinite 5s;
+  animation: 15s cubic-bezier(0.54, 0.61, 0, 1.19) slide infinite 5s;
 }
 
 @keyframes slide {
@@ -85,21 +85,21 @@ export default {
   80% {
     top: -400%;
   }
-  100%{
+  100% {
     top: 0;
   }
-  183%{
+  183% {
     top: -600%
   }
 }
 
-.brand-figure .brands {
-  width: 100%;
-  object-fit: cover;
-}
-@media screen and (max-width: 650px ){
-  .brand-container{
-    height: 25px;
+@media screen and (max-width: 650px ) {
+  .brand-container {
+    height: 40px;
+  }
+
+  .brand-container img {
+    width: 642px
   }
 }
 
